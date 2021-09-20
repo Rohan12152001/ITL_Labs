@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+	<title>Covid Stats</title>
+    <style>
+    body, html {
+          width: 100%;
+          height: 100%;
+          margin: 0;
+      }
+
+    .container {
+      width: 100%;
+      height: 100%;
+    }
+
+    .leftpane {
+        position: fixed;
+        width: 18%;
+        height: 100%;
+        float: left;
+        background-color: lightgray;
+        border-collapse: collapse;
+        border-right-style: solid;
+    }
+
+    .middlepane {
+        width:81%;
+        height: 100%;
+        /*position: relative;*/
+        float: right;
+        background-color: white;
+        border-collapse: collapse;
+    }
+
+    #left-top-header{
+        border-bottom-style: solid;
+        padding-left: 10px;
+        padding-bottom: 10px;
+    }
+
+    .left-side-options{
+        font-family: Calibri;
+        color: black;
+        padding-left: 20px;
+        padding-top: 20px;
+    }
+
+    /*.rightpane {*/
+    /*  width: 25%;*/
+    /*  height: 100%;*/
+    /*  position: relative;*/
+    /*  float: right;*/
+    /*  background-color: yellow;*/
+    /*  border-collapse: collapse;*/
+    /*}*/
+
+    /*.toppane {*/
+    /*  width: 100%;*/
+    /*  height: 100px;*/
+    /*  border-collapse: collapse;*/
+    /*  background-color: #4da6ff;*/
+    /*}*/
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+  <div class="leftpane">
+      <h1 id="left-top-header"><a href="LandingPage.html" style="color: black">Covid-19 Stats</a></h1>
+      <ul>
+          <li id="home"><h2 class="left-side-options"><a href="Today.html">Today</a></h2></li>
+          <li><h2 class="left-side-options"><a href="stateWise.html">State-wise</a></h2></li>
+          <li><h2 class="left-side-options"><a href="form.html">Form</a></h2></li>
+    </ul>
+  </div>
+
+  <div id="middle" class="middlepane">
+    <h1 style="padding-left: 300px;padding-top: 300px"><i><u>Welcome to Covid-19 Stats!</u></i></h1>
+      <article>
+        <input type="button" class="btn"
+        style="font-weight: bold;display: inline;position: absolute;top: 20px;right: 20px;"
+        value="Close" onClick="javascript:window.close('','_parent','');"/>
+      </article>
+  </div>
+
+</div>
+
+<script type="text/javascript">
+</script>
+</body>
+</html>
